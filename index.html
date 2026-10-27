@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PARK Investments</title>
+<link rel="canonical" href="https://park.investments/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#14213D">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PARK Investments">
+<meta property="og:title" content="PARK Investments · AI-Native Investing">
+<meta property="og:description" content="PARK Investments is an AI-native investment firm in Singapore, investing across listed equities, venture, digital assets, RWA, alternatives and credit.">
+<meta property="og:url" content="https://park.investments/">
+<meta property="og:image" content="https://park.investments/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PARK Investments · AI-Native Investing">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PARK Investments · AI-Native Investing">
+<meta name="twitter:description" content="PARK Investments is an AI-native investment firm in Singapore, investing across listed equities, venture, digital assets, RWA, alternatives and credit.">
+<meta name="twitter:image" content="https://park.investments/og-image.png">
+<meta name="description" content="PARK Investments is an AI-native investment firm in Singapore, investing across listed equities, venture, digital assets, RWA, alternatives and credit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Noto+Sans+KR:wght@400;500&family=Noto+Serif+KR:wght@500;600&display=swap">
+<style>
+/* Layout: navy masthead band carrying the wordmark, then ivory "ledger" sections on a 12-col grid, closing on a navy contact band. */
+:root{
+  --paper:#FAF7F0; --paper-2:#F1ECE2; --card:#FFFDF8; --line:#E3DACA;
+  --ink:#14213D; --ink-soft:#3A4256; --muted:#636B7A;
+  --gold:#B08D57; --gold-text:#8A6A3B;
+  --band:#14213D; --on-band:#F3EEE3; --on-band-soft:#C9D0DC; --on-band-muted:#9AA3B5; --gold-on-band:#C9A86A; --band-line:#2A3858;
+  --display:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --body:Inter, 'Helvetica Neue', Arial, sans-serif;
+  --num:Inter, 'Helvetica Neue', Arial, sans-serif;
+  --maxw:1180px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0E172B; --paper-2:#121D35; --card:#16233F; --line:#26345A;
+  --ink:#F3EEE3; --ink-soft:#C9D0DC; --muted:#9AA3B5;
+  --gold:#C9A86A; --gold-text:#D2B47C;
+  --band:#0A1224; --on-band:#F3EEE3; --on-band-soft:#C9D0DC; --on-band-muted:#9AA3B5; --gold-on-band:#C9A86A; --band-line:#22304F;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0E172B; --paper-2:#121D35; --card:#16233F; --line:#26345A;
+  --ink:#F3EEE3; --ink-soft:#C9D0DC; --muted:#9AA3B5;
+  --gold:#C9A86A; --gold-text:#D2B47C;
+  --band:#0A1224; --on-band:#F3EEE3; --on-band-soft:#C9D0DC; --on-band-muted:#9AA3B5; --gold-on-band:#C9A86A; --band-line:#22304F;
+  color-scheme:dark}
+:root[data-lang="ko"]{
+  --display:'Noto Serif KR', 'Cormorant Garamond', Georgia, serif;
+  --body:'Noto Sans KR', Inter, Arial, sans-serif;
+  word-break:keep-all;
+}
+.ko{display:none}
+:root[data-lang="ko"] .ko{display:revert}
+:root[data-lang="ko"] .en{display:none}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--band)}
+h1,h2,h3,p{margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--body);font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-text)}
+:root[data-lang="ko"] .eyebrow{letter-spacing:.12em;font-weight:500;font-size:13.5px}
+.h2{font-family:var(--display);font-weight:600;font-size:clamp(32px,4.4vw,52px);line-height:1.12;letter-spacing:-.005em;text-wrap:balance;max-width:22ch}
+:root[data-lang="ko"] .h2{font-size:clamp(28px,3.6vw,42px);line-height:1.35;max-width:24ch;letter-spacing:-.02em}
+.h3{font-family:var(--display);font-weight:600;font-size:26px;line-height:1.2}
+:root[data-lang="ko"] .h3{font-size:22px;line-height:1.4}
+.lede{color:var(--ink-soft);max-width:62ch}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--band);color:var(--on-band);border-bottom:1px solid var(--band-line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:64px}
+.brand{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:19px;letter-spacing:.24em;text-decoration:none;white-space:nowrap}
+.brand span{color:var(--gold-on-band);font-weight:600}
+.nav{display:flex;gap:26px;margin-left:auto;font-size:14px}
+.nav a{text-decoration:none;color:var(--on-band-soft)}
+.nav a:hover{color:var(--on-band)}
+.lang{display:flex;border:1px solid var(--band-line);border-radius:999px;padding:3px;gap:2px}
+.lang button{all:unset;cursor:pointer;font:600 12px/1 var(--num);letter-spacing:.08em;padding:7px 11px;border-radius:999px;color:var(--on-band-muted)}
+.lang button[aria-pressed="true"]{background:var(--gold-on-band);color:#14213D}
+.lang button:focus-visible{outline:2px solid var(--gold-on-band)}
+@media (max-width:820px){.nav{display:none}.lang{margin-left:auto}}
+@media (max-width:480px){.top .wrap{gap:12px}.brand{font-size:15px;letter-spacing:.16em}.lang button{padding:7px 9px}}
+
+/* hero */
+.hero{background:var(--band);color:var(--on-band)}
+.hero .wrap{padding-block:clamp(56px,9vw,112px) clamp(48px,7vw,88px);display:grid;gap:clamp(36px,5vw,56px)}
+.logo{display:block;width:min(560px,100%);height:auto;color:var(--on-band)}
+.logo path{fill:currentColor}
+.logo .rule{fill:var(--gold-on-band)}
+.slogan{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(15px,2.6vw,31px);letter-spacing:.42em;color:var(--gold-on-band);white-space:nowrap;margin-top:-12px}
+.hero-copy{display:grid;gap:22px;max-width:640px}
+.hero-copy p{color:var(--on-band-soft);font-size:clamp(17px,1.6vw,19px)}
+.cta{display:inline-flex;align-items:center;gap:10px;justify-self:start;font:600 14px/1 var(--body);letter-spacing:.06em;padding:15px 22px;border:1px solid var(--gold-on-band);color:var(--on-band);text-decoration:none;border-radius:2px;transition:background .2s,color .2s}
+.cta:hover{background:var(--gold-on-band);color:#14213D}
+
+/* spectrum: the firm's range drawn as one axis */
+.spectrum{border-top:1px solid var(--band-line);padding-top:28px;display:grid;gap:14px}
+.axis{position:relative;height:2px;background:linear-gradient(90deg,var(--on-band-soft),var(--gold-on-band))}
+.axis i{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;transform:translate(-50%,-50%);background:var(--band);border:2px solid var(--gold-on-band)}
+.axis i:first-child{left:0;transform:translate(0,-50%);border-color:var(--on-band-soft)}
+.axis i:nth-child(2){left:50%}
+.axis i:last-child{left:auto;right:0;transform:translate(0,-50%)}
+.axis-labels{display:grid;grid-template-columns:1fr 1fr 1fr;font-size:13px;letter-spacing:.06em;color:var(--on-band-muted);gap:12px}
+.axis-labels b{display:block;color:var(--on-band);font-weight:600;letter-spacing:.14em;font-size:12px;text-transform:uppercase}
+:root[data-lang="ko"] .axis-labels b{letter-spacing:.06em;font-size:13px}
+.axis-labels div:nth-child(2){text-align:center}
+.axis-labels div:last-child{text-align:right}
+
+/* sections */
+section.block{padding-block:clamp(64px,9vw,112px)}
+section.block.alt{background:var(--paper-2)}
+.head{display:grid;gap:18px;margin-bottom:clamp(36px,5vw,56px)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(24px,3.5vw,48px)}
+.col{display:grid;gap:12px;align-content:start;border-top:1px solid var(--gold);padding-top:22px;min-width:0}
+.col p{color:var(--ink-soft)}
+
+.pair{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:stretch}
+.pane{padding:clamp(28px,3.5vw,44px);display:grid;gap:14px;align-content:start;border:1px solid var(--line);background:var(--card);min-width:0}
+.pane.dark{background:var(--band);border-color:var(--band);color:var(--on-band)}
+.pane.dark p{color:var(--on-band-soft)}
+.pane.dark .eyebrow{color:var(--gold-on-band)}
+.pane p{color:var(--ink-soft)}
+.arrow{align-self:center;color:var(--gold);font:300 28px/1 var(--num)}
+@media (max-width:760px){.pair{grid-template-columns:1fr}.arrow{justify-self:center;transform:rotate(90deg)}}
+.assets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.asset{padding:clamp(22px,2.6vw,32px);display:grid;gap:10px;align-content:start;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--card);min-width:0}
+.asset:nth-child(-n+3){border-top:3px solid var(--ink)}
+.asset p{color:var(--ink-soft);font-size:15.5px}
+@media (max-width:900px){.assets{grid-template-columns:1fr 1fr}.asset:nth-child(-n+3){border-top:0}}
+@media (max-width:560px){.assets{grid-template-columns:1fr}}
+.note{margin-top:28px;color:var(--ink-soft);max-width:70ch}
+
+.layers{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:var(--card)}
+.layer{padding:28px 26px 32px;display:grid;gap:10px;align-content:start;border-left:1px solid var(--line);min-width:0}
+.layer:first-child{border-left:0}
+.layer .n{font:500 13px/1 var(--num);letter-spacing:.12em;color:var(--gold-text)}
+.layer p{color:var(--ink-soft);font-size:15.5px}
+@media (max-width:900px){.layers{grid-template-columns:1fr 1fr}.layer:nth-child(3){border-left:0}.layer:nth-child(n+3){border-top:1px solid var(--line)}}
+@media (max-width:520px){.layers{grid-template-columns:1fr}.layer{border-left:0}.layer+.layer{border-top:1px solid var(--line)}}
+
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:20px;counter-reset:s}
+.steps li{border-top:2px solid var(--ink);padding-top:18px;display:grid;gap:8px;align-content:start;min-width:0}
+.steps li p{color:var(--ink-soft);font-size:15.5px}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.principles{margin-top:36px;background:var(--band);color:var(--on-band);padding:22px 28px;display:flex;flex-wrap:wrap;gap:12px 32px;align-items:center}
+.principles .eyebrow{color:var(--gold-on-band)}
+.principles ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15.5px}
+.principles li::before{content:"";display:inline-block;width:5px;height:5px;background:var(--gold-on-band);transform:rotate(45deg) translateY(-3px);margin-right:10px}
+
+/* track record */
+.record{background:var(--band);color:var(--on-band)}
+.record .eyebrow{color:var(--gold-on-band)}
+.record .lede{color:var(--on-band-soft)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);max-width:820px;gap:clamp(20px,3vw,40px);margin-top:clamp(36px,5vw,56px)}
+.stat{border-top:1px solid var(--gold-on-band);padding-top:20px;display:grid;gap:8px}
+.stat .v{font:300 clamp(44px,7vw,92px)/1 var(--num);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.stat .k{font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-on-band)}
+:root[data-lang="ko"] .stat .k{letter-spacing:.06em;font-size:13.5px}
+@media (max-width:560px){.stats{grid-template-columns:1fr}}
+.fine{margin-top:36px;display:grid;gap:6px;font-size:13.5px;color:var(--on-band-muted);max-width:80ch}
+.fine strong{color:var(--on-band-soft);font-weight:500}
+
+/* leadership */
+.leader{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:start}
+.portrait{margin:0;background:var(--paper-2);aspect-ratio:4/5;max-width:100%;overflow:hidden}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.leader-main{display:grid;gap:26px;min-width:0}
+.leader .name{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(44px,6vw,72px);line-height:1;letter-spacing:.06em}
+.leader .name-ko{font-family:'Noto Serif KR',Georgia,serif;font-weight:600;font-size:24px;margin-top:10px}
+.leader .role{margin-top:14px;font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-text)}
+:root[data-lang="ko"] .leader .role{letter-spacing:.06em}
+.bio-lead{font-size:19px;color:var(--ink-soft);max-width:60ch}
+.cv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.cv>div{border-top:1px solid var(--gold);padding-top:16px;display:grid;gap:10px;align-content:start}
+.cv-h{font-family:var(--display);font-weight:600;font-size:21px;margin:0}
+.cv ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:15px;line-height:1.5;color:var(--ink-soft)}
+@media (max-width:980px){.cv{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.leader{grid-template-columns:1fr}.portrait{max-width:320px}.cv{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:var(--band);color:var(--on-band)}
+.contact .wrap{padding-block:clamp(64px,9vw,104px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,80px);align-items:center}
+.contact .h2{color:var(--on-band)}
+.contact .eyebrow{color:var(--gold-on-band)}
+.card-c{border-left:1px solid var(--gold-on-band);padding-left:clamp(20px,3vw,40px);display:grid;gap:18px}
+.row{display:grid;gap:4px}
+.row .lbl{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-on-band)}
+.row .val{font-size:18px;color:var(--on-band);user-select:all;overflow-wrap:anywhere}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.copy{all:unset;cursor:pointer;font:600 12px/1 var(--body);letter-spacing:.08em;padding:8px 12px;border:1px solid var(--band-line);border-radius:2px;color:var(--on-band-soft)}
+.copy:hover{border-color:var(--gold-on-band);color:var(--on-band)}
+.copy:focus-visible{outline:2px solid var(--gold-on-band)}
+@media (max-width:760px){.contact .wrap{grid-template-columns:1fr}}
+
+footer{background:var(--band);color:var(--on-band-muted);border-top:1px solid var(--band-line);font-size:13px}
+footer .wrap{padding-block:28px 36px;display:grid;gap:14px}
+footer .legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+footer p.disc{max-width:90ch;line-height:1.6}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">PARK <span>INVESTMENTS</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about"><span class="en">About</span><span class="ko">회사 소개</span></a>
+      <a href="#approach"><span class="en">Approach</span><span class="ko">투자 방식</span></a>
+      <a href="#record"><span class="en">Track record</span><span class="ko">투자 실적</span></a>
+      <a href="#contact"><span class="en">Contact</span><span class="ko">문의</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" id="lang-en" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" id="lang-ko" data-set="ko" aria-pressed="false">KO</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <svg class="logo" viewBox="0 0 461.4 154.3" role="img" aria-label="PARK Investments" xmlns="http://www.w3.org/2000/svg"><path d="M32.6 64.5Q32.9 64.5 32.9 65.1Q32.9 65.8 32.6 65.8Q28.3 65.8 25.9 65.7L16.8 65.6L9.2 65.7Q7.1 65.8 3.5 65.8Q3.2 65.8 3.2 65.1Q3.2 64.5 3.5 64.5Q6.9 64.5 8.4 64Q9.9 63.5 10.4 62Q11 60.4 11 57.3V9Q11 5.8 10.4 4.4Q9.9 2.9 8.4 2.3Q6.8 1.8 3.5 1.8Q3.2 1.8 3.2 1.1Q3.2 0.5 3.5 0.5L9.1 0.6Q13.9 0.8 16.7 0.8Q19.2 0.8 22.7 0.5Q24 0.4 26.1 0.3Q28.2 0.2 30.9 0.2Q41.6 0.2 47.7 4.6Q53.9 9.1 53.9 18.4Q53.9 24.8 50.5 29.3Q47.2 33.8 41.9 36.1Q36.6 38.4 31.1 38.4Q28.3 38.4 26.2 37.9Q26 37.9 26 37.4Q26 37.1 26.2 36.7Q26.3 36.4 26.5 36.5Q28.1 37 30.1 37Q34.9 37 38.1 32.5Q41.2 28 41.2 19.7Q41.2 11.5 37.7 7Q34.2 2.5 27.6 2.5Q24.6 2.5 23.6 3.9Q22.6 5.2 22.6 9.2V56.9Q22.6 60.2 23.3 61.8Q24 63.3 26 63.9Q28.1 64.5 32.6 64.5ZM139.7 38.9H169.8L170.5 41.9H138.2ZM195.2 65.8Q193.1 65.8 188.7 65.6Q184.1 65.4 182.1 65.4Q179.5 65.4 175.7 65.6Q172.2 65.8 170.1 65.8Q169.7 65.8 169.7 65.1Q169.7 64.5 170.1 64.5Q172.8 64.5 174 63.9Q175.2 63.4 175.2 61.9Q175.2 60.1 173.1 56L151.9 14.1L157.1 5.1L136.3 50.9Q134.9 54 134.9 56.6Q134.9 60.3 137.6 62.4Q140.2 64.5 144.7 64.5Q145.3 64.5 145.3 65.1Q145.3 65.8 144.7 65.8Q142.9 65.8 139.3 65.6Q135.3 65.4 132.4 65.4Q129.6 65.4 125.6 65.6Q122.1 65.8 119.9 65.8Q119.5 65.8 119.5 65.1Q119.5 64.5 119.9 64.5Q122.8 64.5 124.8 63.3Q126.8 62.1 128.8 59Q130.7 56 133.5 49.9L156.1 0.1Q156.3 -0.2 157.1 -0.2Q157.9 -0.2 158 0.1L184.1 51.5Q187.7 58.9 190.1 61.7Q192.5 64.5 195.2 64.5Q195.7 64.5 195.7 65.1Q195.7 65.8 195.2 65.8ZM288.4 32.8 298 29.9Q306.7 43 312.5 50.4Q318.3 57.8 322.8 61.2Q327.3 64.5 331.5 64.5Q331.7 64.5 331.7 65.1Q331.7 65.8 331.5 65.8H313Q310.6 65.8 304.1 57.1Q297.6 48.3 288.4 32.8ZM310.4 13.5Q310.4 19.4 307.1 24.2Q303.7 29 298.2 31.7Q292.8 34.3 286.9 34.3Q282.8 34.3 281.1 34.2V57.3Q281.1 60.6 281.6 62Q282.2 63.5 283.7 64Q285.2 64.5 288.5 64.5Q288.7 64.5 288.7 65.1Q288.7 65.8 288.5 65.8Q285.1 65.8 283.1 65.7L275.2 65.6L267.5 65.7Q265.5 65.8 261.9 65.8Q261.6 65.8 261.6 65.1Q261.6 64.5 261.9 64.5Q265.2 64.5 266.8 64Q268.3 63.5 268.8 62Q269.4 60.4 269.4 57.3V9Q269.4 5.8 268.9 4.4Q268.4 2.9 266.8 2.3Q265.2 1.8 262 1.8Q261.8 1.8 261.8 1.1Q261.8 0.5 262 0.5L267.5 0.6Q272.3 0.8 275.2 0.8Q278.7 0.8 282.6 0.5Q283.9 0.4 286 0.3Q288 0.2 290.5 0.2Q300 0.2 305.2 3.7Q310.4 7.2 310.4 13.5ZM288.8 2.4Q284.7 2.4 282.9 4Q281.1 5.5 281.1 9.2V31.3Q283.6 31.7 287.2 31.7Q293.2 31.7 295.9 28.3Q298.5 25 298.5 17.4Q298.5 8.9 296 5.6Q293.5 2.4 288.8 2.4ZM396.4 1.8Q396.1 1.8 396.1 1.1Q396.1 0.5 396.4 0.5L401.9 0.6Q406.7 0.8 409.6 0.8Q412.7 0.8 417.5 0.6L422.8 0.5Q423.1 0.5 423.1 1.1Q423.1 1.8 422.8 1.8Q419.6 1.8 418.1 2.4Q416.6 3 416 4.5Q415.4 6.1 415.4 9.2V57.3Q415.4 60.6 415.9 62Q416.4 63.5 418 64Q419.5 64.5 422.8 64.5Q423.2 64.5 423.2 65.1Q423.2 65.8 422.8 65.8Q419.4 65.8 417.4 65.7L409.6 65.6L401.8 65.7Q399.7 65.8 396.2 65.8Q396 65.8 396 65.1Q396 64.5 396.2 64.5Q399.5 64.5 401.1 64Q402.7 63.5 403.2 62Q403.8 60.4 403.8 57.3V9Q403.8 5.8 403.2 4.4Q402.7 2.9 401.2 2.3Q399.6 1.8 396.4 1.8ZM417.1 31.3 425.4 23.3 441.4 44.8Q448.2 54.5 451.6 58.5Q455 62.5 457.1 63.5Q459.1 64.5 462.4 64.5Q462.7 64.5 462.7 65.1Q462.7 65.8 462.4 65.8H450.7Q449 65.8 447.9 65.9Q446.7 66 446 66Q444.3 66 443.1 65.2Q441.9 64.4 440.2 62.3Q438.5 60.2 434.1 54.3Q433.6 53.6 432.9 52.7Q432.2 51.8 431.4 50.6ZM438.1 5.7Q438.1 3.9 436.4 2.8Q434.7 1.8 431.7 1.8Q431.4 1.8 431.4 1.1Q431.4 0.5 431.7 0.5L436.6 0.6Q441.2 0.8 445.2 0.8Q449.4 0.8 454 0.6L458.7 0.5Q459 0.5 459 1.1Q459 1.8 458.7 1.8Q453.9 1.8 448.2 4.5Q442.4 7.3 437.7 11.9L410.9 39.2L408.1 38.8L435 11.3Q438.1 8.2 438.1 5.7Z" /><rect x="0" y="89.8" width="461.4" height="2" class="rule"/><path d="M17.3 151.6Q17.5 151.6 17.5 152Q17.5 152.3 17.3 152.3Q15.4 152.3 14.3 152.3L9.9 152.2L5.6 152.3Q4.4 152.3 2.4 152.3Q2.3 152.3 2.3 152Q2.3 151.6 2.4 151.6Q4.3 151.6 5.2 151.3Q6 151 6.4 150.2Q6.7 149.4 6.7 147.6V120.8Q6.7 119 6.4 118.2Q6 117.4 5.2 117.1Q4.3 116.8 2.4 116.8Q2.3 116.8 2.3 116.4Q2.3 116.1 2.4 116.1L5.6 116.1Q8.2 116.2 9.9 116.2Q11.7 116.2 14.3 116.1L17.3 116.1Q17.5 116.1 17.5 116.4Q17.5 116.8 17.3 116.8Q15.5 116.8 14.6 117.1Q13.7 117.5 13.5 118.3Q13.2 119.1 13.2 120.9V147.6Q13.2 149.4 13.5 150.2Q13.7 151 14.6 151.3Q15.4 151.6 17.3 151.6ZM34.2 117.4 35.9 117.5V144.9Q35.9 148 37.2 149.8Q38.5 151.6 40.8 151.6Q40.9 151.6 40.9 152Q40.9 152.3 40.8 152.3Q39.1 152.3 38.3 152.3L35.1 152.2L31.5 152.3Q30.5 152.3 28.7 152.3Q28.5 152.3 28.5 152Q28.5 151.6 28.7 151.6Q31.2 151.6 32.7 149.8Q34.2 148 34.2 144.9ZM63.1 153.4 34.6 120.8Q32.5 118.5 31.1 117.6Q29.6 116.8 28.1 116.8Q28 116.8 28 116.4Q28 116.1 28.1 116.1L30.5 116.1Q31.3 116.2 32.8 116.2L37.2 116.1Q38 116.1 39.1 116.1Q39.6 116.1 39.8 116.3Q40.1 116.5 40.6 117.3Q41.6 118.6 42 119.1L63.3 143.6L63.8 153.2Q63.8 153.4 63.5 153.4Q63.3 153.5 63.1 153.4ZM63.8 153.2 62.1 151.4V123.5Q62.1 120.4 60.8 118.6Q59.5 116.8 57.3 116.8Q57.2 116.8 57.2 116.4Q57.2 116.1 57.3 116.1L59.8 116.1Q61.6 116.2 62.9 116.2Q64.1 116.2 66.2 116.1L68.8 116.1Q68.9 116.1 68.9 116.4Q68.9 116.8 68.8 116.8Q66.5 116.8 65.1 118.6Q63.8 120.4 63.8 123.5ZM115 116.8Q112.9 116.8 111 118.6Q109.1 120.5 108 123.6L97.2 152.3Q97.2 152.5 96.6 152.5Q96 152.5 96 152.3L81.2 120.9Q80.1 118.8 79.1 117.8Q78 116.8 76.8 116.8Q76.6 116.8 76.6 116.4Q76.6 116.1 76.8 116.1Q77.6 116.1 78 116.1Q79.1 116.2 81 116.2Q86 116.2 89.5 116.1Q90.4 116.1 91.8 116.1Q92 116.1 92 116.4Q92 116.8 91.8 116.8Q90 116.8 89.1 117.5Q88.1 118.2 88.1 119.5Q88.1 120.5 88.8 121.9L99.3 144.4L96.6 149.2L106.3 123.4Q106.9 121.8 106.9 120.6Q106.9 118.8 105.8 117.8Q104.8 116.8 102.7 116.8Q102.6 116.8 102.6 116.4Q102.6 116.1 102.7 116.1L105.6 116.1Q108 116.2 109.9 116.2Q111 116.2 112.7 116.1L115 116.1Q115.2 116.1 115.2 116.4Q115.2 116.8 115 116.8ZM124.1 151.6Q126 151.6 126.8 151.3Q127.7 151 128 150.2Q128.2 149.4 128.2 147.6V120.8Q128.2 119 128 118.2Q127.7 117.4 126.8 117.1Q125.9 116.8 124.1 116.8Q124 116.8 124 116.4Q124 116.1 124.1 116.1H148.7Q149.3 116.1 149.3 116.6L149.4 124.3Q149.4 124.4 149.1 124.5Q148.8 124.5 148.7 124.4Q147.8 121 145.6 119.4Q143.4 117.7 139.8 117.7H138Q136.3 117.7 135.5 118.5Q134.7 119.3 134.7 120.8V147.4Q134.7 149.1 135.3 149.9Q136 150.7 137.3 150.7H139.3Q143.8 150.7 146.5 148.8Q149.2 147 150.5 143.1Q150.5 143 150.7 143Q150.9 143 151.1 143.1Q151.2 143.1 151.2 143.2Q150.6 147.7 150.6 151.4Q150.6 151.9 150.5 152.1Q150.3 152.3 149.8 152.3H124.1Q124 152.3 124 152Q124 151.6 124.1 151.6ZM139.4 134.3H131.6V132.7H139.5Q142.9 132.7 144.7 131.5Q146.5 130.3 146.5 128.2Q146.5 128.1 146.8 128.1Q147.1 128.1 147.1 128.2L147 133.5L147.1 136.2Q147.2 138.2 147.2 139.4Q147.2 139.5 146.9 139.5Q146.5 139.5 146.5 139.4Q146.5 137 144.7 135.6Q142.9 134.3 139.4 134.3ZM178.8 131.4Q181.7 133.3 183.4 134.7Q185.2 136.1 186.4 138.1Q187.6 140.1 187.6 142.7Q187.6 145.7 186 148Q184.4 150.4 181.5 151.7Q178.6 153 175.1 153Q172.5 153 169.7 152.3Q166.8 151.6 165.8 150.7Q165.5 150.5 165.4 150.3Q165.2 150.1 165.2 149.6L165.1 140.4V140.3Q165.1 140.1 165.3 140Q165.6 140 165.7 140.2Q167.4 143.8 168.7 146Q170 148.2 172 149.9Q174 151.6 176.6 151.6Q178.9 151.6 180.4 150.3Q181.9 149.1 181.9 146Q181.9 143.5 180.8 141.6Q179.7 139.7 178 138.3Q176.4 137 173.6 135.1Q170.8 133.3 169.3 132.1Q167.7 130.8 166.6 129Q165.5 127.2 165.5 124.8Q165.5 121.7 167.3 119.6Q169.1 117.5 171.8 116.4Q174.6 115.4 177.7 115.4Q179.7 115.4 181.8 115.8Q183.9 116.2 185.2 116.7Q185.7 116.9 185.9 117.2Q186.1 117.5 186.1 117.9V126.4Q186.1 126.6 185.8 126.6Q185.5 126.7 185.4 126.6L184.9 125.5Q183.5 121.8 181.6 119.3Q179.6 116.7 176.1 116.7Q173.8 116.7 172.3 118Q170.9 119.4 170.9 121.9Q170.9 124 171.9 125.6Q173 127.3 174.6 128.5Q176.1 129.7 178.8 131.4ZM200.6 126.4Q200.5 126.6 200.2 126.5Q200 126.5 200 126.3Q200.2 124 200.5 120.3Q200.8 116.6 200.8 114.8Q200.8 114.5 201.1 114.5Q201.4 114.5 201.4 114.8Q201.4 116.1 204.7 116.1Q209.7 116.2 216.4 116.2Q219.8 116.2 223.6 116.1L227.6 116.1Q229.8 116.1 230.8 115.8Q231.8 115.5 232.1 114.6Q232.1 114.4 232.5 114.4Q232.8 114.4 232.8 114.6Q232.6 116.4 232.4 120.2Q232.2 124 232.2 126.3Q232.2 126.5 231.9 126.5Q231.6 126.5 231.6 126.3Q230.7 121.9 228.3 119.6Q225.9 117.4 222.5 117.4Q220.8 117.4 220.2 118.1Q219.7 118.8 219.7 120.9V147.6Q219.7 149.4 220 150.2Q220.4 151 221.4 151.3Q222.3 151.6 224.5 151.6Q224.7 151.6 224.7 152Q224.7 152.3 224.5 152.3Q222.4 152.3 221.2 152.3L216.4 152.2L211.7 152.3Q210.5 152.3 208.3 152.3Q208.1 152.3 208.1 152Q208.1 151.6 208.3 151.6Q210.4 151.6 211.4 151.3Q212.4 151 212.8 150.2Q213.2 149.4 213.2 147.6V120.8Q213.2 118.8 212.7 118.1Q212.1 117.4 210.5 117.4Q203.6 117.4 200.6 126.4ZM249.3 117.4 251 117.5 250.3 144.9Q250.3 148.1 251.6 149.8Q252.9 151.6 255.3 151.6Q255.4 151.6 255.4 152Q255.4 152.3 255.3 152.3Q253.7 152.3 252.8 152.3L249.6 152.2L246 152.3Q245.1 152.3 243.5 152.3Q243.3 152.3 243.3 152Q243.3 151.6 243.5 151.6Q245.9 151.6 247.3 149.8Q248.7 148 248.7 144.9ZM290.2 152.3Q288.3 152.3 287.1 152.3L282.8 152.2L278.5 152.3Q277.4 152.3 275.5 152.3Q275.3 152.3 275.3 152Q275.3 151.6 275.5 151.6Q277.3 151.6 278.2 151.3Q279.1 151 279.4 150.2Q279.7 149.4 279.6 147.6L278.2 121.9L281.2 117.2L266.4 151.9Q266.3 152.1 265.9 152.1Q265.6 152.1 265.5 151.9L249.2 120.9Q248 118.7 246.8 117.7Q245.5 116.8 243.9 116.8Q243.7 116.8 243.7 116.4Q243.7 116.1 243.9 116.1L246.6 116.1Q247.4 116.2 248.7 116.2L251.8 116.1Q252.3 116.1 253.1 116.1Q253.9 116.1 254.3 116.6Q254.7 117.1 255.8 119.1L268.8 143.4L265.9 148.7L279.5 117.5Q279.8 116.7 280.2 116.4Q280.6 116.1 281.2 116.1Q281.7 116.1 282.4 116.1Q283 116.2 283.9 116.2L287.3 116.1Q288.2 116.1 289.7 116.1Q289.8 116.1 289.8 116.4Q289.8 116.8 289.7 116.8Q286.9 116.8 285.7 117.9Q284.5 119 284.6 121.3L286 147.6Q286.1 149.4 286.4 150.2Q286.8 151 287.6 151.3Q288.4 151.6 290.2 151.6Q290.4 151.6 290.4 152Q290.4 152.3 290.2 152.3ZM301 151.6Q302.9 151.6 303.7 151.3Q304.5 151 304.8 150.2Q305.1 149.4 305.1 147.6V120.8Q305.1 119 304.8 118.2Q304.5 117.4 303.7 117.1Q302.8 116.8 301 116.8Q300.8 116.8 300.8 116.4Q300.8 116.1 301 116.1H325.6Q326.2 116.1 326.2 116.6L326.3 124.3Q326.3 124.4 326 124.5Q325.7 124.5 325.6 124.4Q324.7 121 322.5 119.4Q320.3 117.7 316.7 117.7H314.9Q313.2 117.7 312.4 118.5Q311.6 119.3 311.6 120.8V147.4Q311.6 149.1 312.2 149.9Q312.8 150.7 314.2 150.7H316.1Q320.7 150.7 323.4 148.8Q326.1 147 327.4 143.1Q327.4 143 327.6 143Q327.8 143 328 143.1Q328.1 143.1 328.1 143.2Q327.5 147.7 327.5 151.4Q327.5 151.9 327.3 152.1Q327.2 152.3 326.6 152.3H301Q300.8 152.3 300.8 152Q300.8 151.6 301 151.6ZM316.3 134.3H308.5V132.7H316.4Q319.7 132.7 321.5 131.5Q323.3 130.3 323.3 128.2Q323.3 128.1 323.7 128.1Q324 128.1 324 128.2L323.9 133.5L324 136.2Q324.1 138.2 324.1 139.4Q324.1 139.5 323.7 139.5Q323.4 139.5 323.4 139.4Q323.4 137 321.6 135.6Q319.7 134.3 316.3 134.3ZM345 117.4 346.8 117.5V144.9Q346.8 148 348 149.8Q349.3 151.6 351.6 151.6Q351.7 151.6 351.7 152Q351.7 152.3 351.6 152.3Q349.9 152.3 349.1 152.3L345.9 152.2L342.3 152.3Q341.4 152.3 339.5 152.3Q339.3 152.3 339.3 152Q339.3 151.6 339.5 151.6Q342.1 151.6 343.5 149.8Q345 148 345 144.9ZM374 153.4 345.4 120.8Q343.3 118.5 341.9 117.6Q340.4 116.8 338.9 116.8Q338.8 116.8 338.8 116.4Q338.8 116.1 338.9 116.1L341.4 116.1Q342.1 116.2 343.6 116.2L348 116.1Q348.8 116.1 349.9 116.1Q350.4 116.1 350.6 116.3Q350.9 116.5 351.5 117.3Q352.4 118.6 352.8 119.1L374.1 143.6L374.6 153.2Q374.6 153.4 374.3 153.4Q374.1 153.5 374 153.4ZM374.6 153.2 372.9 151.4V123.5Q372.9 120.4 371.6 118.6Q370.4 116.8 368.1 116.8Q368 116.8 368 116.4Q368 116.1 368.1 116.1L370.6 116.1Q372.4 116.2 373.7 116.2Q374.9 116.2 377 116.1L379.6 116.1Q379.7 116.1 379.7 116.4Q379.7 116.8 379.6 116.8Q377.3 116.8 375.9 118.6Q374.6 120.4 374.6 123.5ZM390.2 126.4Q390.2 126.6 389.9 126.5Q389.6 126.5 389.6 126.3Q389.8 124 390.1 120.3Q390.4 116.6 390.4 114.8Q390.4 114.5 390.7 114.5Q391 114.5 391 114.8Q391 116.1 394.4 116.1Q399.3 116.2 406 116.2Q409.4 116.2 413.3 116.1L417.2 116.1Q419.4 116.1 420.4 115.8Q421.4 115.5 421.7 114.6Q421.8 114.4 422.1 114.4Q422.4 114.4 422.4 114.6Q422.3 116.4 422 120.2Q421.8 124 421.8 126.3Q421.8 126.5 421.6 126.5Q421.3 126.5 421.2 126.3Q420.3 121.9 418 119.6Q415.6 117.4 412.1 117.4Q410.4 117.4 409.9 118.1Q409.3 118.8 409.3 120.9V147.6Q409.3 149.4 409.7 150.2Q410 151 411 151.3Q412 151.6 414.1 151.6Q414.3 151.6 414.3 152Q414.3 152.3 414.1 152.3Q412 152.3 410.8 152.3L406 152.2L401.3 152.3Q400.1 152.3 398 152.3Q397.8 152.3 397.8 152Q397.8 151.6 398 151.6Q400 151.6 401.1 151.3Q402.1 151 402.4 150.2Q402.8 149.4 402.8 147.6V120.8Q402.8 118.8 402.3 118.1Q401.8 117.4 400.2 117.4Q393.3 117.4 390.2 126.4ZM449.6 131.4Q452.5 133.3 454.2 134.7Q456 136.1 457.2 138.1Q458.4 140.1 458.4 142.7Q458.4 145.7 456.8 148Q455.2 150.4 452.3 151.7Q449.4 153 445.9 153Q443.3 153 440.5 152.3Q437.6 151.6 436.6 150.7Q436.3 150.5 436.2 150.3Q436 150.1 436 149.6L435.9 140.4V140.3Q435.9 140.1 436.2 140Q436.4 140 436.5 140.2Q438.2 143.8 439.5 146Q440.9 148.2 442.9 149.9Q444.9 151.6 447.4 151.6Q449.7 151.6 451.2 150.3Q452.7 149.1 452.7 146Q452.7 143.5 451.6 141.6Q450.5 139.7 448.9 138.3Q447.2 137 444.4 135.1Q441.6 133.3 440.1 132.1Q438.5 130.8 437.4 129Q436.3 127.2 436.3 124.8Q436.3 121.7 438.1 119.6Q439.9 117.5 442.6 116.4Q445.4 115.4 448.5 115.4Q450.5 115.4 452.6 115.8Q454.7 116.2 456 116.7Q456.5 116.9 456.7 117.2Q456.9 117.5 456.9 117.9V126.4Q456.9 126.6 456.6 126.6Q456.3 126.7 456.2 126.6L455.8 125.5Q454.3 121.8 452.4 119.3Q450.4 116.7 446.9 116.7Q444.6 116.7 443.1 118Q441.7 119.4 441.7 121.9Q441.7 124 442.7 125.6Q443.8 127.3 445.4 128.5Q446.9 129.7 449.6 131.4Z" /></svg>
+      </div>
+      <p class="slogan">AI-NATIVE INVESTING</p>
+      <div class="hero-copy">
+        <p class="en">We find structural change early and invest in it with discipline, across listed equities, venture, digital assets, RWA, alternatives and credit. Every decision starts with data and is tested by AI-driven research before capital moves.</p>
+        <p class="ko">구조적 변화를 누구보다 먼저 발견하고, 원칙에 따라 투자합니다. 상장 주식, 벤처, 디지털 자산, RWA, 대체투자, 크레딧까지, 모든 의사결정은 데이터에서 출발하며 자본을 투입하기 전에 AI 기반 리서치로 검증합니다.</p>
+        <a class="cta" href="#contact"><span class="en">Get in touch</span><span class="ko">문의하기</span> <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="spectrum" aria-label="Investment range">
+        <div class="axis" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="axis-labels">
+          <div><b><span class="en">Public</span><span class="ko">공개 시장</span></b><span class="en">Equities, credit</span><span class="ko">상장 주식, 크레딧</span></div>
+          <div><b><span class="en">One engine</span><span class="ko">하나의 엔진</span></b><span class="en">Shared AI research</span><span class="ko">공통 AI 리서치</span></div>
+          <div><b><span class="en">Private &amp; digital</span><span class="ko">비상장 · 디지털</span></b><span class="en">Venture, crypto, RWA, alternatives</span><span class="ko">벤처, 암호화폐, RWA, 대체투자</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow"><span class="en">Who we are</span><span class="ko">회사 소개</span></p>
+        <h2 class="h2"><span class="en">An AI-native investment firm, across every asset class.</span><span class="ko">상장 주식부터 디지털 자산까지, 모든 자산에 AI 네이티브로 투자합니다.</span></h2>
+      </div>
+      <div class="cols">
+        <div class="col"><h3 class="h3"><span class="en">Mission</span><span class="ko">미션</span></h3><p><span class="en">Identify structural change early, and invest in it with discipline.</span><span class="ko">구조적 변화를 누구보다 먼저 발견하고, 원칙에 따라 투자합니다.</span></p></div>
+        <div class="col"><h3 class="h3"><span class="en">Approach</span><span class="ko">접근 방식</span></h3><p><span class="en">Every decision starts with data and is tested by AI-driven research before capital moves.</span><span class="ko">모든 의사결정은 데이터에서 출발하며, 자본을 투입하기 전에 AI 기반 리서치로 검증합니다.</span></p></div>
+        <div class="col"><h3 class="h3"><span class="en">Base</span><span class="ko">거점</span></h3><p><span class="en">Headquartered in Singapore, Asia’s financial hub, investing across Asian and global markets.</span><span class="ko">아시아 금융 허브인 싱가포르에 본사를 두고 아시아와 글로벌 시장에 투자합니다.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow"><span class="en">Why AI-native</span><span class="ko">왜 AI 네이티브인가</span></p>
+        <h2 class="h2"><span class="en">Markets now produce more signal than any team can read.</span><span class="ko">이제 시장은 어떤 팀도 다 읽을 수 없을 만큼 많은 신호를 만들어냅니다.</span></h2>
+      </div>
+      <div class="cols">
+        <div class="col"><h3 class="h3"><span class="en">Breadth</span><span class="ko">범위</span></h3><p><span class="en">AI reads filings, prices, news and alternative data across thousands of assets at once.</span><span class="ko">AI는 공시, 가격, 뉴스, 대체 데이터를 수천 개 자산에 걸쳐 동시에 읽습니다.</span></p></div>
+        <div class="col"><h3 class="h3"><span class="en">Speed</span><span class="ko">속도</span></h3><p><span class="en">Ideas move from hypothesis to tested signal far faster than manual research allows.</span><span class="ko">가설이 검증된 신호가 되기까지의 시간이 사람의 리서치보다 훨씬 짧습니다.</span></p></div>
+        <div class="col"><h3 class="h3"><span class="en">Discipline</span><span class="ko">원칙</span></h3><p><span class="en">Models apply the same rules every time, taking emotion out of conviction.</span><span class="ko">모델은 매번 같은 규칙을 적용해, 투자 판단에서 감정을 걷어냅니다.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="approach">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow"><span class="en">What we invest in</span><span class="ko">투자 영역</span></p>
+        <h2 class="h2"><span class="en">One AI engine, every investable asset.</span><span class="ko">하나의 AI 엔진으로, 모든 자산에 투자합니다.</span></h2>
+      </div>
+      <div class="assets">
+        <div class="asset"><h3 class="h3"><span class="en">Listed equities</span><span class="ko">상장 주식</span></h3><p><span class="en">Systematic, AI-driven quant strategies in public markets.</span><span class="ko">AI 기반 퀀트 전략으로 상장 주식을 체계적으로 운용합니다.</span></p></div>
+        <div class="asset"><h3 class="h3"><span class="en">Venture &amp; private</span><span class="ko">벤처 · 비상장</span></h3><p><span class="en">Early-stage companies driving the next structural shifts.</span><span class="ko">다음 구조적 변화를 이끄는 초기 기업에 투자합니다.</span></p></div>
+        <div class="asset"><h3 class="h3"><span class="en">Digital assets</span><span class="ko">디지털 자산</span></h3><p><span class="en">Crypto, analysed through on-chain and market data together.</span><span class="ko">온체인 데이터와 시장 데이터를 함께 분석해 암호화폐에 투자합니다.</span></p></div>
+        <div class="asset"><h3 class="h3"><span class="en">RWA &amp; tokenized assets</span><span class="ko">RWA · 토큰화 자산</span></h3><p><span class="en">Real estate, bonds and other real-world assets, brought on-chain.</span><span class="ko">부동산, 채권 등 실물자산을 토큰화한 새로운 투자 기회를 발굴합니다.</span></p></div>
+        <div class="asset"><h3 class="h3"><span class="en">Alternatives</span><span class="ko">대체투자</span></h3><p><span class="en">Art, music royalties and real estate, valued with data where data was scarce.</span><span class="ko">미술품, 음악 저작권, 부동산처럼 데이터가 부족했던 자산을 데이터로 평가합니다.</span></p></div>
+        <div class="asset"><h3 class="h3"><span class="en">Credit &amp; fixed income</span><span class="ko">크레딧 · 채권</span></h3><p><span class="en">Private credit and bonds, assessed with alternative credit scoring.</span><span class="ko">대안신용평가 기술로 사모대출과 채권의 리스크를 분석합니다.</span></p></div>
+      </div>
+      <p class="note"><span class="en">Every asset class shares the same research engine, so data and signals from one market inform decisions in another.</span><span class="ko">모든 영역이 같은 리서치 엔진을 공유합니다. 한 시장에서 얻은 데이터와 신호가 다른 시장의 판단을 돕습니다.</span></p>
+    </div>
+  </section>
+
+  <section class="block alt">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow"><span class="en">Our AI platform</span><span class="ko">AI 플랫폼</span></p>
+        <h2 class="h2"><span class="en">Four layers turn raw data into disciplined positions.</span><span class="ko">네 개의 레이어가 데이터를 원칙 있는 포지션으로 바꿉니다.</span></h2>
+      </div>
+      <div class="layers">
+        <div class="layer"><span class="n">LAYER 1</span><h3 class="h3"><span class="en">Data</span><span class="ko">데이터</span></h3><p><span class="en">Market, fundamental, news, on-chain and alternative data, cleaned and unified.</span><span class="ko">시장, 재무, 뉴스, 온체인, 대체 데이터를 정제하고 통합합니다.</span></p></div>
+        <div class="layer"><span class="n">LAYER 2</span><h3 class="h3"><span class="en">Signals</span><span class="ko">신호</span></h3><p><span class="en">Machine-learning models that surface and rank investment signals.</span><span class="ko">머신러닝 모델이 투자 신호를 찾아내고 순위를 매깁니다.</span></p></div>
+        <div class="layer"><span class="n">LAYER 3</span><h3 class="h3"><span class="en">Portfolio</span><span class="ko">포트폴리오</span></h3><p><span class="en">Construction and sizing that turn signals into positions.</span><span class="ko">신호를 실제 포지션으로 바꾸는 구성과 비중을 결정합니다.</span></p></div>
+        <div class="layer"><span class="n">LAYER 4</span><h3 class="h3"><span class="en">Risk</span><span class="ko">리스크</span></h3><p><span class="en">Continuous monitoring of exposure, drawdown and model drift.</span><span class="ko">익스포저, 손실폭, 모델 드리프트를 상시 모니터링합니다.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow"><span class="en">How we invest</span><span class="ko">투자 프로세스</span></p>
+        <h2 class="h2"><span class="en">From idea to position, every step is tested.</span><span class="ko">아이디어에서 포지션까지, 모든 단계를 검증합니다.</span></h2>
+      </div>
+      <ol class="steps">
+        <li><h3 class="h3"><span class="en">Discover</span><span class="ko">발굴</span></h3><p><span class="en">AI scans markets and sectors for emerging change.</span><span class="ko">AI가 시장과 섹터에서 새로운 변화를 탐색합니다.</span></p></li>
+        <li><h3 class="h3"><span class="en">Model</span><span class="ko">모델링</span></h3><p><span class="en">Hypotheses become measurable signals.</span><span class="ko">가설을 측정 가능한 신호로 바꿉니다.</span></p></li>
+        <li><h3 class="h3"><span class="en">Validate</span><span class="ko">검증</span></h3><p><span class="en">Out-of-sample tests before any capital is committed.</span><span class="ko">자본 투입 전 표본 외 테스트를 거칩니다.</span></p></li>
+        <li><h3 class="h3"><span class="en">Invest</span><span class="ko">투자</span></h3><p><span class="en">Positions sized within clear risk limits.</span><span class="ko">명확한 리스크 한도 안에서 비중을 정합니다.</span></p></li>
+        <li><h3 class="h3"><span class="en">Monitor</span><span class="ko">모니터링</span></h3><p><span class="en">Live tracking of performance and model drift.</span><span class="ko">성과와 모델 드리프트를 실시간으로 추적합니다.</span></p></li>
+      </ol>
+      <div class="principles">
+        <p class="eyebrow"><span class="en">Risk principles</span><span class="ko">리스크 원칙</span></p>
+        <ul>
+          <li><span class="en">Limits on every strategy</span><span class="ko">전략별 한도 설정</span></li>
+          <li><span class="en">Validation before going live</span><span class="ko">실전 투입 전 검증</span></li>
+          <li><span class="en">Human oversight on every decision</span><span class="ko">모든 결정에 사람의 감독</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block record" id="record">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow"><span class="en">Selected track record</span><span class="ko">주요 투자 실적</span></p>
+        <h2 class="h2"><span class="en">Listed equity: Tesla (TSLA)</span><span class="ko">상장 주식: 테슬라 TSLA</span></h2>
+        <p class="lede"><span class="en">Invested ahead of Tesla’s Korea market entry, before its stock splits, when electric vehicles were still seen as a niche.</span><span class="ko">테슬라의 한국 진출 이전, 액면분할 전에 투자했습니다. 전기차가 아직 틈새시장으로 여겨지던 시기였습니다.</span></p>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="v">1,700%</span><span class="k"><span class="en">Peak return</span><span class="ko">최고 수익률</span></span></div>
+        <div class="stat"><span class="v">~34%</span><span class="k"><span class="en">IRR · peak basis</span><span class="ko">IRR (최고점 기준)</span></span></div>
+      </div>
+      <div class="fine">
+        <p><strong><span class="en">Unrealized · IRR estimated from an early-2016 purchase to the 2025 peak · Current return 1,300% (as of October 2026)</span><span class="ko">평가 수익(미실현) · IRR은 2016년 초 매수, 2025년 최고점 기준 추정 · 현재 수익률 1,300% (2026년 10월 기준)</span></strong></p>
+        <p><span class="en">Personal investment by the founder prior to the establishment of PARK Investments. Past performance is not indicative of future results.</span><span class="ko">PARK Investments 설립 이전 창업자의 개인 투자입니다. 과거 성과가 미래 수익을 보장하지 않습니다.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="leadership">
+    <div class="wrap">
+      <div class="head"><p class="eyebrow"><span class="en">Leadership</span><span class="ko">리더십</span></p></div>
+      <div class="leader">
+        <div class="leader-main">
+          <div>
+            <p class="name">AYUN PARK</p>
+            <p class="name-ko ko">박아윤</p>
+            <p class="role"><span class="en">Founder &amp; CEO</span><span class="ko">창업자 겸 대표 · Founder &amp; CEO</span></p>
+          </div>
+          <p class="bio-lead"><span class="en">An asset-management MBA and fintech founder who has built alternative-investment data platforms and financial services from the ground up.</span><span class="ko">자산운용 MBA를 마치고, 대체투자 데이터 플랫폼과 핀테크 서비스를 직접 만들어 온 금융·AI 창업자입니다.</span></p>
+          <div class="cv">
+            <div><h3 class="cv-h"><span class="en">Investment &amp; Finance</span><span class="ko">투자 · 금융</span></h3>
+              <ul>
+                <li><span class="en">LP in a venture fund, reviewing fund reports and portfolio data</span><span class="ko">벤처펀드 LP 출자 · 운용보고서 및 포트폴리오 검토</span></li>
+                <li><span class="en">Completed the General Partner (GP) program for investment associations, Korea Angel Investment Association</span><span class="ko">투자조합 업무집행조합원(GP) 양성과정 이수 · 한국엔젤투자협회</span></li>
+                <li><span class="en">Co-developed an alternative-investment service with NH Investment &amp; Securities</span><span class="ko">NH투자증권 대체투자 서비스 공동 개발·운영</span></li>
+                <li><span class="en">Fundraising and deal negotiation as a founder</span><span class="ko">창업자로서 투자 유치·계약 협상 실무</span></li>
+              </ul></div>
+            <div><h3 class="cv-h"><span class="en">Career</span><span class="ko">경력</span></h3>
+              <ul>
+                <li><span class="en">Tart AI, founder &amp; CEO (2019–present), runs alternative-investment data platform PRAP</span><span class="ko">Tart AI 창업자·대표 (2019~현재), 대체투자 데이터 플랫폼 PRAP 운영</span></li>
+                <li><span class="en">AdditPay, led alternative credit scoring and lending systems</span><span class="ko">애딧페이 대안신용평가·대출 시스템 개발 총괄</span></li>
+                <li><span class="en">Nexon Korea Intelligence Labs, data engineer (machine learning)</span><span class="ko">넥슨코리아 인텔리전스랩스 데이터 엔지니어 (머신러닝)</span></li>
+                <li><span class="en">Banksalad, early founding member</span><span class="ko">뱅크샐러드 초기 창업 멤버</span></li>
+              </ul></div>
+            <div><h3 class="cv-h"><span class="en">Education &amp; Research</span><span class="ko">학력 · 연구</span></h3>
+              <ul>
+                <li><span class="en">Korea University Business School, MBA (Asset Management)</span><span class="ko">고려대학교 경영전문대학원 MBA (자산운용)</span></li>
+                <li><span class="en">Stanford CS229 Machine Learning (non-degree), event forecasting research</span><span class="ko">Stanford CS229 머신러닝 (비학위), 이벤트 예측 연구</span></li>
+                <li><span class="en">2 registered and 2 pending patents in private-company analysis</span><span class="ko">비상장기업 분석 특허 등록 2건 · 출원 2건</span></li>
+              </ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="head" style="margin:0">
+        <p class="eyebrow"><span class="en">Contact</span><span class="ko">문의</span></p>
+        <h2 class="h2"><span class="en">Let’s talk about what comes next.</span><span class="ko">다음 변화에 대해 이야기해 주세요.</span></h2>
+      </div>
+      <div class="card-c">
+        <div class="row">
+          <span class="lbl"><span class="en">Email</span><span class="ko">이메일</span></span>
+          <div class="mail"><span class="val" id="email">enterance@park.investments</span><button class="copy" type="button" id="copy-email"><span class="en">Copy</span><span class="ko">복사</span></button></div>
+        </div>
+        <div class="row">
+          <span class="lbl"><span class="en">Web</span><span class="ko">웹사이트</span></span>
+          <span class="val">https://park.investments</span>
+        </div>
+        <div class="row">
+          <span class="lbl"><span class="en">Office</span><span class="ko">사무소</span></span>
+          <span class="val">Singapore</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="legal"><span>PARK Investments Pte. Ltd.</span><span>© 2026</span></div>
+    <p class="disc"><span class="en">This website is for information purposes only and does not constitute an offer, solicitation or recommendation to buy or sell any security or investment product. Past performance is not indicative of future results.</span><span class="ko">본 웹사이트는 정보 제공 목적으로만 작성되었으며, 어떠한 증권이나 투자상품의 매수·매도를 위한 청약, 권유 또는 추천에 해당하지 않습니다. 과거 성과가 미래 수익을 보장하지 않습니다.</span></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l){
+    root.setAttribute('data-lang',l);
+    root.setAttribute('lang',l==='ko'?'ko':'en');
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
+    try{localStorage.setItem('park-lang',l);}catch(e){}
+  }
+  var saved=null;
+  try{saved=localStorage.getItem('park-lang');}catch(e){}
+  setLang(saved==='ko'?'ko':'en');
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set);});});
+
+  var btn=document.getElementById('copy-email');
+  btn.addEventListener('click',function(){
+    var text=document.getElementById('email').textContent;
+    var done=function(){var ko=root.getAttribute('data-lang')==='ko';btn.innerHTML=ko?'복사됨':'Copied';setTimeout(function(){btn.innerHTML='<span class="en">Copy</span><span class="ko">복사</span>';},1600);};
+    var fallback=function(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=window.getSelection();s.removeAllRanges();s.addRange(r);};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,fallback);}else{fallback();}
+  });
+})();
+</script>
+
+</body>
+</html>
